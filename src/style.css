@@ -13,3 +13,11 @@
 .btn-white {
     @apply bg-bookmark-white
 };
+
+.footer {
+    @apply bg-gray-200 p-4;
+}
+
+.footer-links {
+    @apply flex justify-between items-center;
+}
