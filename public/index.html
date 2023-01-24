@@ -1,4 +1,5 @@
 <!--https://www.youtube.com/watch?v=00gyCtIQp8E&t=3708s-->
+<!--https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a?retiredLocale=de-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,9 +17,9 @@
         <nav class="container flex items-center py-4 mt-4 sm:mt-12">
             <div class="py-4 h-20 w-20 rounded-lg"> <img src="imgs/logo_ai_zwei.jpg" alt=""> </div>
             <ul class="hidden sm:flex flex-1 justify-end items-center gap-12 text-bookmark-white uppercase text-xs">
-                <li class="cursor-pointer">Eureka</li>
-                <li class="cursor-pointer">Features</li>
-                <li class="cursor-pointer">Kontakt</li>
+                <li class="cursor-pointer"> <a href="#Daten"> Daten </a> </li>
+                <li class="cursor-pointer"> <a href="#editionen"> Digitale Editionen </a> </li>
+                <li class="cursor-pointer"> <a href="#print"> Printpublikation </a> </li>
                 <button type="button" class="bg-bookmark-purple text-bookmark-white rounded-md px-7 py-3 uppercase">Leg Los!</button>
               </ul>
         </nav>
@@ -40,7 +41,7 @@
         </p>
         <div class="flex justify-center flex-wrap gap-6">
           <button type="button" class="btn bg-bookmark-purple text-bookmark-white p-4 rounded-md bg-gradient-to-r from-purple-400 to-pink-600 hover:bg-bookmark-white">
-            Leg Los!
+            <a href="#Section_further_down">Leg Los!</a>
           </button>
         </div>
       </div>
@@ -69,34 +70,41 @@
     ></div>
   </section>
 
-
-
-
-
-
-
-
-
-
     <!-- Features -->
     <section class= "py-20 mt-20 lg:mt-60 bg-slate-900" >
         <!-- Heading -->
-        <div class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
+        <div id="Section_further_down" class="sm:w-3/4 lg:w-5/12 mx-auto px-2">
             <h1 class="text-3xl text-center text-bookmark-white">Weil best practice nicht immer die beste Lösung ist</h1>
             <p class="text-center text-bookmark-grey mt-4">
               HTML 5 erlaubt einfachere und schlankere Lösungen als TEI-XML und lässt sich zielgerichtet auf dein Projekt zuschneiden
             </p>
         </div>
     <!-- Feature #1 -->
+
+    <div class="relative mt-20 lg:mt-24">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+          <div class="flex-1">
+            <h2 class="text-2xl text-bookmark-white">HTML 5</h2>
+            <p class="text-bookmark-grey mt-4"> Intuitiv verständlich, differenziert, eindeutig </p>
+            <img src="imgs/html.jpg" alt="" class="h-96 ">
+          </div>
+
+          <div class="flex-1">
+            <h2 class="text-2xl text-bookmark-white">TEI-XML</h2>
+            <p class="text-bookmark-grey mt-4"> Schnell unübersichtlich, überfrachtet, tendenziell mehrdeutig </p>
+            <img src="imgs/teixml.jpg" alt="" class="h-96 ">
+        </div>
+
+  </div>
   
   
 
-    <div class="relative mt-20 lg:mt-24" style="background-color: white;">
-        <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+    <div  class="relative mt-20 lg:mt-24" style="background-color: white;">
+        <div id="Daten" class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
             <div class="flex-1">
                 <h2 class="text-2xl text-bookmark-blue">Strukturierte Daten</h2>
                 <p class="text-bookmark-grey mt-4">
-                  Für eine wissenschaftliche Edition sind strukturietere Daten das A und O. <br/>
+                  Für eine wissenschaftliche Edition sind strukturiertere Daten das A und O. <br/>
                   HTML ist ein Datenstandard garantiert, der die Nachnutzbarkeit deiner Ergebnisse gewährleistet.
                 </p>
             </div>
@@ -110,7 +118,7 @@
 
 
 
-    <div class="relative mt-20 lg:mt-24">
+    <div id="editionen" class="relative mt-20 lg:mt-24">
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
             <div class="flex-1">
                 <img src="https://media.istockphoto.com/id/1354153850/de/foto/dokumenten-management-system-automatisierungssoftware-zur-archivierung-und-effizienten.jpg?s=2048x2048&w=is&k=20&c=sf8pwHTKOOsR7dEhx4jOifcp1nbiuiGHhB60fjVnmxE=" alt="" class="h-96 ">
@@ -130,7 +138,7 @@
 
 
 
-    <div class="relative mt-20 lg:mt-24 p-5" style="background-color: white;">
+    <div id="print" class="relative mt-20 lg:mt-24 p-5" style="background-color: white;">
         <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
             <div class="flex-1">
                 <h2 class="text-2xl text-bookmark-blue">Printpublikation</h2>
@@ -144,6 +152,80 @@
             </div>
         </div>
     </div>
+
+    <div class="relative mt-20 mb-20 lg:mt-24 p-5 ">
+      <h1 class="text-3xl text-center text-bookmark-white">Vergleich mit anderen Auszeichungssystemen</h1>
+            <div class="container flex flex-col lg:flex-row items-center justify-center gap-x-24">
+        
+        <table class="table-auto text-bookmark-white border-separate border-spacing-2 border border-slate-500 m-4 p-4">
+          <thead>
+            <tr>
+              <th class="border border-slate-600 border-spacing-2 p-4 bg-bookmark-blue">Technologie</th>
+              <th class="border border-slate-600 border-spacing-2 p-4 bg-bookmark-blue">Daten</th>
+              <th class="border border-slate-600 p-4 bg-bookmark-blue">Druck</th>
+              <th class="border border-slate-600 p-4 bg-bookmark-blue">Online</th>
+              <th class="border border-slate-600 p-4 bg-bookmark-blue">Ökosystem</th>
+              <th class="border border-slate-600 p-4 bg-bookmark-blue">Modularisiert</th>
+              <th class="border border-slate-600 p-4 bg-bookmark-blue">Erlernbarkeit</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td class="border border-slate-700 p-4 bg-bookmark-blue">Textverarbeitungsprogramme</td>
+              <td class="border border-slate-700 p-4">schwierig</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">schwierig</td>
+              <td class="border border-slate-700 p-4">-</td>
+              <td class="border border-slate-700 p-4">-</td>
+              <td class="border border-slate-700 p-4">leicht</td>
+            </tr>
+
+            <tr>
+              <td class="border border-slate-700 p-4 bg-bookmark-blue">LaTex</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">leicht</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">vorhanden</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+            </tr>
+
+            <tr>
+              <td class="border border-slate-700 p-4 bg-bookmark-blue">TEI-XML</td>
+              <td class="border border-slate-700 p-4">schwierig</td>
+              <td class="border border-slate-700 p-4">leicht</td>
+              <td class="border border-slate-700 p-4">schwierig</td>
+              <td class="border border-slate-700 p-4">-</td>
+              <td class="border border-slate-700 p-4">-</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+            </tr>
+
+            <tr>
+              <td class="border border-slate-700 p-4 bg-bookmark-blue">HTML 5</td>
+              <td class="border border-slate-700 p-4">leicht</td>
+              <td class="border border-slate-700 p-4">schwierig</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">ausgezeichnet</td>
+              <td class="border border-slate-700 p-4">mittel</td>
+              <td class="border border-slate-700 p-4">leicht</td>
+            </tr>
+
+            
+            
+          </tbody>
+        </table>
+          
+      </div>
+  </div>
+
+
+  <div class="relative mt-20 mb-20 lg:mt-24 p-5">
+
+</div>
+
+
+
     </section>
 
 <!-- Footer -->
