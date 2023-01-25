@@ -9,6 +9,7 @@ module.exports = {
           "bookmark-blue": "#242A45",
           "bookmark-grey": "#9194A2",
           "bookmark-white": "#f7f7f7",
+          "bookmark-yellow": "ffff00",
         },
       },
       fontFamily: {
